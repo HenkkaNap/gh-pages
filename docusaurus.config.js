@@ -25,8 +25,10 @@ const config = {
       ({
         docs: {
           sidebarPath: './sidebars.js',
+          routeBasePath: '/',
           editUrl: 'https://github.com/YOUR_GITHUB_USERNAME/gh-pages/tree/main/',
         },
+        blog: false,
         theme: {
           customCss: './src/css/custom.css',
         },
@@ -47,13 +49,22 @@ const config = {
             type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
             position: 'left',
-            label: 'Guides',
+            label: 'Getting Started',
+            to: '/getting-started/introduction',
           },
           {
             type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
             position: 'left',
             label: 'Examples',
+            to: '/examples/basic-examples',
+          },
+          {
+            type: 'docSidebar',
+            sidebarId: 'tutorialSidebar',
+            position: 'left',
+            label: 'Best Practices',
+            to: '/best-practices/coding-standards',
           },
           {
             href: 'https://github.com/YOUR_GITHUB_USERNAME/gh-pages',
@@ -70,15 +81,15 @@ const config = {
             items: [
               {
                 label: 'Getting Started',
-                to: '/docs/getting-started',
+                to: '/getting-started/introduction',
               },
               {
                 label: 'Code Examples',
-                to: '/docs/examples',
+                to: '/examples/basic-examples',
               },
               {
                 label: 'Best Practices',
-                to: '/docs/best-practices',
+                to: '/best-practices/coding-standards',
               },
             ],
           },
