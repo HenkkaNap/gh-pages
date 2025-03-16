@@ -8,9 +8,9 @@ const config = {
   title: 'Coding Guides & Examples',
   tagline: 'A comprehensive guide to coding best practices and examples',
   favicon: 'img/favicon.ico',
-  url: 'https://YOUR_GITHUB_USERNAME.github.io',
+  url: 'https://henkkanap.github.io',
   baseUrl: '/gh-pages/',
-  organizationName: 'YOUR_GITHUB_USERNAME',
+  organizationName: 'henkkanap',
   projectName: 'gh-pages',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -26,7 +26,7 @@ const config = {
         docs: {
           sidebarPath: './sidebars.js',
           routeBasePath: '/',
-          editUrl: 'https://github.com/YOUR_GITHUB_USERNAME/gh-pages/tree/main/',
+          editUrl: 'https://github.com/henkkanap/gh-pages/tree/main/',
         },
         blog: false,
         theme: {
@@ -67,7 +67,7 @@ const config = {
             to: '/best-practices/coding-standards',
           },
           {
-            href: 'https://github.com/YOUR_GITHUB_USERNAME/gh-pages',
+            href: 'https://github.com/henkkanap/gh-pages',
             label: 'GitHub',
             position: 'right',
           },
@@ -98,7 +98,7 @@ const config = {
             items: [
               {
                 label: 'GitHub',
-                href: 'https://github.com/YOUR_GITHUB_USERNAME/gh-pages',
+                href: 'https://github.com/henkkanap/gh-pages',
               },
             ],
           },
