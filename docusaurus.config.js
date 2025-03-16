@@ -8,16 +8,24 @@ const config = {
   title: 'Coding Guides & Examples',
   tagline: 'A comprehensive guide to coding best practices and examples',
   favicon: 'img/favicon.ico',
-  url: 'https://henkkanap.github.io',
-  baseUrl: '/gh-pages/',
-  organizationName: 'henkkanap',
+
+  // Set the production url of your site here
+  url: `https://${process.env.GITHUB_REPOSITORY_OWNER || 'GITHUB_USERNAME'}.github.io`,
+  // Set the /<baseUrl>/ pathname under which your site is served
+  baseUrl: process.env.BASE_URL || '/gh-pages/',
+
+  // GitHub pages deployment config
+  organizationName: process.env.GITHUB_REPOSITORY_OWNER || 'GITHUB_USERNAME',
   projectName: 'gh-pages',
+
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
+
   i18n: {
     defaultLocale: 'en',
     locales: ['en'],
   },
+
   presets: [
     [
       'classic',
@@ -26,7 +34,7 @@ const config = {
         docs: {
           sidebarPath: './sidebars.js',
           routeBasePath: '/',
-          editUrl: 'https://github.com/henkkanap/gh-pages/tree/main/',
+          editUrl: 'https://github.com/${process.env.GITHUB_REPOSITORY || "GITHUB_USERNAME/gh-pages"}/tree/main/',
         },
         blog: false,
         theme: {
@@ -35,6 +43,7 @@ const config = {
       }),
     ],
   ],
+
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
@@ -67,7 +76,7 @@ const config = {
             to: '/best-practices/coding-standards',
           },
           {
-            href: 'https://github.com/henkkanap/gh-pages',
+            href: `https://github.com/${process.env.GITHUB_REPOSITORY || "GITHUB_USERNAME/gh-pages"}`,
             label: 'GitHub',
             position: 'right',
           },
@@ -98,7 +107,7 @@ const config = {
             items: [
               {
                 label: 'GitHub',
-                href: 'https://github.com/henkkanap/gh-pages',
+                href: `https://github.com/${process.env.GITHUB_REPOSITORY || "GITHUB_USERNAME/gh-pages"}`,
               },
             ],
           },

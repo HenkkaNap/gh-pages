@@ -41,6 +41,9 @@ jobs:
         run: npm ci
 
       - name: Build website
+        env:
+          GITHUB_REPOSITORY: ${{ github.repository }}
+          GITHUB_REPOSITORY_OWNER: ${{ github.repository_owner }}
         run: npm run build
 
       - name: Upload artifact
