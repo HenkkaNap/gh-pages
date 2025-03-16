@@ -34,7 +34,7 @@ const config = {
         docs: {
           sidebarPath: './sidebars.js',
           routeBasePath: '/',
-          editUrl: 'https://github.com/${process.env.GITHUB_REPOSITORY || "GITHUB_USERNAME/gh-pages"}/tree/main/',
+          editUrl: `https://github.com/${process.env.GITHUB_REPOSITORY || 'GITHUB_USERNAME/gh-pages'}/tree/main/`,
         },
         blog: false,
         theme: {
@@ -76,7 +76,7 @@ const config = {
             to: '/best-practices/coding-standards',
           },
           {
-            href: `https://github.com/${process.env.GITHUB_REPOSITORY || "GITHUB_USERNAME/gh-pages"}`,
+            href: `https://github.com/${process.env.GITHUB_REPOSITORY || 'GITHUB_USERNAME/gh-pages'}`,
             label: 'GitHub',
             position: 'right',
           },
@@ -107,7 +107,7 @@ const config = {
             items: [
               {
                 label: 'GitHub',
-                href: `https://github.com/${process.env.GITHUB_REPOSITORY || "GITHUB_USERNAME/gh-pages"}`,
+                href: `https://github.com/${process.env.GITHUB_REPOSITORY || 'GITHUB_USERNAME/gh-pages'}`,
               },
             ],
           },
